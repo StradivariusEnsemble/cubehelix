@@ -26,7 +26,7 @@ with col2:
 
 st.divider()
 
-st.subheader("a simple study of Predictive maintenance and accurate estimation of Remaining Useful Life (RUL) of Lithium-ion batteries based on their usage and environmental conditions.")
+st.subheader("Simple study of Predictive maintenance and estimation of Remaining Useful Life (RUL) of Lithium-ion batteries")
 st.caption("by yours truly Magento Kubiza")
 st.divider()
 battery_data = pd.read_csv("batteryV1.csv")
@@ -71,6 +71,8 @@ fig2 = sns.catplot(
 
 st.pyplot(fig2.figure)
 
+st.caption("The optimal distribution of battery deployments and operating strategies ultimately depends on local climate conditions, battery chemistry, application requirements, and lifecycle cost.")
+
 st.subheader("Nominal Capacity Distribution by Manufacturer and Usage Strategy") 
 
 fig3 = sns.catplot(
@@ -79,3 +81,4 @@ fig3 = sns.catplot(
 
 st.pyplot(fig3.figure)
 
+st.caption("No chemistry is universally best for every climate. System design, certified operating limits, and thermal management are equally important.")
